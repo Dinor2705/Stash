@@ -1,0 +1,19 @@
+name: Pixelub会员
+desc: Pixelub会员(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - '*.cdwapi.com, *.cerebroapi.com'
+  rewrite:
+    - ^https:\/\/gateway\.cerebroapi\.com\/log\/ios$ - reject
+  script:
+    - match: ^https:\/\/receipt-verifier\.cdwapi\.com\/receipt$
+      name: Pixelub
+      type: response
+      require-body: false
+      timeout: 10
+      
+script-providers:
+  Pixelub:
+    url: https://raw.githubusercontent.com/Dinor2705/Stash/main/Pixelup.js
+    interval: 0
