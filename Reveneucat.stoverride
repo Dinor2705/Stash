@@ -1,0 +1,17 @@
+name: Revenuecat会员
+desc: Revenuecat解锁(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: https:\/\/api\.revenuecat\.com
+      name: Revenuecat
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Revenuecat:
+    url: https://raw.githubusercontent.com/Dinor2705/Stash/main/revenuecat.js
+    interval: 0
