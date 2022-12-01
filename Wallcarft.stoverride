@@ -13,4 +13,4 @@ http:
 script-providers:
   Wallcraft:
     url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js
-    interval: 0
+    interval: 86400
