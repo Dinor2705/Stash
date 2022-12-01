@@ -1,0 +1,16 @@
+name: Wallcraft会员
+desc: 解锁Wallcraft会员(2022.12.2) @Dinor2705
+http:
+  mitm:
+    - '*.wallpaperscraft.com'
+  script:
+    - match: ^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$
+      name: Wallcraft
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Wallcraft:
+    url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js
+    interval: 86400
