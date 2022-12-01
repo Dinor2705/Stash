@@ -1,0 +1,17 @@
+name: Lightroom会员
+desc: Lightroom会员(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'photos.adobe.io'
+  script:
+    - match: ^https:\/\/photos\.adobe\.io\/v2\/accounts
+      name: Lightroom
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Lightroom:
+    url: https://raw.githubusercontent.com/Dinor2705/Stash/main/alohavpn.js
+    interval: -1
