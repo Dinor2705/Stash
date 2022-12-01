@@ -13,5 +13,5 @@ http:
 
 script-providers:
     Wallcraft: 
-     url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/WallCraftFProCrack.js
+     url: https://github.com/Dinor2705/Stash/raw/main/Wallcraft.js
       interval: 86400
