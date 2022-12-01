@@ -1,0 +1,17 @@
+name: Fileball会员
+desc: Fileball会员(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'firebaseremoteconfig.googleapis.com'
+  script:
+    - match: ^https:\/\/firebaseremoteconfig\.googleapis\.com\/v\d\/projects
+      name: Fileball
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Fileball:
+    url: https://raw.githubusercontent.com/Dinor2705/Stash/main/Fileball.js
+    interval: 0
