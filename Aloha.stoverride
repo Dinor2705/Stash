@@ -1,0 +1,17 @@
+name: Aloha会员
+desc: Aloha会员(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'api.alohaprofile.com'
+  script:
+    - match: ^https:\/\/api\.alohaprofile\.com/v\d\/(profile_info|subscription_postback|profile_oauth)
+      name: Aloha
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Aloha:
+    url: https://raw.githubusercontent.com/Dinor2705/Stash/main/alohavpn.js
+    interval: 0
