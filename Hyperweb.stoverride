@@ -1,0 +1,16 @@
+name: Hyperweb会员
+desc: Hyperweb解锁(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'zy6kcqa01a.execute-api.us-east-2.amazonaws.com'
+  script:
+    - match: ^https://zy6kcqa01a.execute-api.us-east-2.amazonaws.com/prod/verifyReceipt
+      name: Hyperweb
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Hyperweb:
+    url: https://github.com/Dinor2705/Stash/raw/main/hyperweb.js
