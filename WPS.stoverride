@@ -13,5 +13,5 @@ http:
       
 script-providers:
   WPS:
-    url: https://github.com/Dinor2705/Stash/raw/main/WPS.js
+    url: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js
     interval: 0
