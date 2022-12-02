@@ -13,4 +13,4 @@ http:
 script-providers:
   Wallcraft:
     url: https://github.com/Dinor2705/Stash/raw/main/Wallcraft.js
-    interval: 0
+    interval: 86400
