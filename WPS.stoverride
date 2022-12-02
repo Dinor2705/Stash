@@ -1,18 +1,18 @@
-name: WPS会员
-desc: WPS解锁(2022.12.2) @Dinor2705
+name: Wps
+desc: Wps(2022.12.2) @Dinor2705
 
 http:
   mitm:
     - 'account.wps.cn,*account.wps.com'
   script:
     - match: ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$
-      name: WPS
-      type: request
+      name: Wps
+      type: response
       require-body: true
       timeout: 10
       
 script-providers:
-  WPS:
+  Wps:
     url: https://raw.githubusercontent.com/Dinor2705/Stash/main/WPS.js
       interval: 0
     
