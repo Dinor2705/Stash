@@ -1,0 +1,17 @@
+name: Timenote会员
+desc: Timenote解锁(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'data.ufbae.com'
+  script:
+    - match: http:\/\/data\.ufbae\.com\/User\/GetUser
+      name: Timenote
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Timenote:
+    url: https://github.com/Dinor2705/Stash/raw/main/zjbj.js
+    interval: 0
