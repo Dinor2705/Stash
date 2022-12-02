@@ -5,7 +5,7 @@ http:
   mitm:
     - 'account.wps.cn,*account.wps.com'
   script:
-    - match: ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$
+    - match: ^https?:\/\/account\.wps\.cn\/api\/users
       name: Wps
       type: response
       require-body: true
@@ -14,5 +14,5 @@ http:
 script-providers:
   Wps:
     url: https://raw.githubusercontent.com/Dinor2705/Stash/main/WPS.js
-      interval: 0
+      interval: 86400
     
