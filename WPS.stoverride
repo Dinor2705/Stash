@@ -14,4 +14,4 @@ http:
 script-providers:
   WPS:
     url: https://raw.githubusercontent.com/Dinor2705/Stash/main/WPS.js
-    interval: 0
+    
