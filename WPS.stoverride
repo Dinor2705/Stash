@@ -1,5 +1,5 @@
-name: Wps会员
-desc: Wps会员(2022.12.2) @Dinor2705
+name: WPS会员
+desc: WPS会员(2022.12.2) @Dinor2705
 
 http:
   mitm:
