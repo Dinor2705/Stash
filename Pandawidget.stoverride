@@ -1,0 +1,17 @@
+name: Pandawidget会员
+desc: Pandawidget解锁(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'buy.itunes.apple.com'
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: Pandawidget
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Pandawidget:
+    url: https://github.com/Dinor2705/Stash/raw/main/pandavip.js
+    interval: 0
