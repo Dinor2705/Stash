@@ -16,4 +16,4 @@ http:
 script-providers:
   Pixelub:
     url: https://raw.githubusercontent.com/Dinor2705/Stash/main/Pixelup.js
-    interval: 0
+    interval: 86400
