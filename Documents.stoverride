@@ -1,0 +1,16 @@
+name: Documents会员
+desc: Documents会员(2022.12.2) @Dinor2705
+
+http:
+  mitm:
+    - 'license.pdfexpert.com'
+  script:
+    - match: ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh
+      name: Documents
+      type: request
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Documents:
+    url: https://github.com/Dinor2705/Stash/raw/main/documents.js
