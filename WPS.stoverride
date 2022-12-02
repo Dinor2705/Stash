@@ -7,11 +7,12 @@ http:
   script:
     - match: ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$
       name: WPS
-      type: response
+      type: request
       require-body: true
       timeout: 10
       
 script-providers:
   WPS:
     url: https://raw.githubusercontent.com/Dinor2705/Stash/main/WPS.js
+      interval: 0
     
