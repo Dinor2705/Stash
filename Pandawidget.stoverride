@@ -14,4 +14,4 @@ http:
 script-providers:
   Pandawidget:
     url: https://github.com/Dinor2705/Stash/raw/main/pandavip.js
-    interval: 0
+    interval: 86400
