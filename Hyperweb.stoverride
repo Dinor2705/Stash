@@ -14,3 +14,4 @@ http:
 script-providers:
   Hyperweb:
     url: https://github.com/Dinor2705/Stash/raw/main/hyperweb.js
+       interval: 86400
