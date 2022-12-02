@@ -14,4 +14,4 @@ http:
 script-providers:
   Timenote:
     url: https://github.com/Dinor2705/Stash/raw/main/zjbj.js
-    interval: 0
+    interval: 86400
