@@ -12,6 +12,6 @@ http:
       timeout: 10
       
 script-providers:
-  Documents:
-    url: https://github.com/Dinor2705/Stash/raw/main/documents.js
-     interval: 86400
+      Documents:
+      url: https://github.com/Dinor2705/Stash/raw/main/documents.js
+      interval: 0
