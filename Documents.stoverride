@@ -14,4 +14,4 @@ http:
 script-providers:
   Documents:
     url: https://github.com/Dinor2705/Stash/raw/main/documents.js
-     interval: 0
+     interval: 86400
