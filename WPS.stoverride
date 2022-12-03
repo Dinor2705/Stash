@@ -7,7 +7,7 @@ http:
       '*account.wps.com'
   script:
     - match: ^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$
-      name: WPS.response
+      name: WPS
       type: response
       require-body: true
       timeout: 10
